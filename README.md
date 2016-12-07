@@ -3,7 +3,8 @@ An IoT project utilizing RS232(UART),FLASK,MYSQL and rendering a website on a RP
 
 ##Index
 
-* What you need?.
+* How to use.
+* What you need.
 * Introduction.
 * Hardware Connections.
 * Serial Read and Write.
@@ -12,6 +13,21 @@ An IoT project utilizing RS232(UART),FLASK,MYSQL and rendering a website on a RP
 * Website.
 
 
+##How to use
+- Copy the **code** folder into your raspberryPI.
+- Open terminal and go to the directory where you copied the folder.
+- Once in folder, you need to run Flask_server to listen to HTTP requests. This is done by:
+```
+Sudo Python flask_server.py
+```
+> The server will listen to port 80.
+
+Now using any other machine (your laptop/phone..etc),open a browser and navigate to **Raspberrypi/** (or to the PI's ip address) and VOILA !
+You can use this panel to send commands to the pi and from the pi to another machine serially.
+
+The browser should render this
+
+![main.html](/Browser.png?row=true "Browser")
 
 ## What you need?
 * RaspberryPI with access to a network.
