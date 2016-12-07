@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        
+    </head>
+    <body>
+
+	 <h1>Pi Serial Control </h1>
+        <p><input type="text" name="serialText" id='serialText' value="Enter text here">
+	 	<button type='button' id='send'>Send</button> </p>
+	<p><input type="text" name="addCommand" id='addCommand' value="addCommand">
+	 	<button type='button' id='add'>Add</button></p>
+	
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
+
+        <script>
+	$(document).ready(function(){
+		$('#send').click(function() {
+			var x = $('#serialText').val();
+                        console.log('sending..'+x);
+			$.post('/serial/sendSerial/' + x);
+		
+		});
+                $('#add').click(function() {
+			var x = $('#addCommand').val();
+                        console.log('sending..'+x);
+			$.post('/database/addCommand/' + x);
+		
+		});
+
+	});
+	</script>
+      
+      
+    </body>
+</html>
+
