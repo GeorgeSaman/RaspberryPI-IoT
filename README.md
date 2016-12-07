@@ -44,7 +44,7 @@ As for internet access, if you are using RPI3 it has a built in Wifi module. For
 
 ##Serial Read and Write
 This file will be used by **FLask** to create an object of PiSerial to send ASCII commands received from the browser.
-> You can find this code in this repo under **pi_serial.py**
+> You can find this code in this repo under **/code/pi_serial.py**
 
 ```python
 import serial
@@ -157,7 +157,7 @@ class PiDatabase(object):
 
 ```
 This file will be used by **FLask** to create an object of PiSerial to send ASCII commands received from the browser.
-> You can find this code in this repo under **pi_database.py**
+> You can find this code in this repo under **/code/pi_database.py**
 
 
 
@@ -165,6 +165,8 @@ This file will be used by **FLask** to create an object of PiSerial to send ASCI
 Flask is a python microframework and it is well documented on their [website](http://flask.pocoo.org/).
 
 > View the [**FLask_Illustration**](/Flask_Illustration.pdf) file that is available with this repo for more details on how flask is implemented in this project.
+
+> You can find this code in this repo under **/code/flask_server.py**
 
 Below is the python code to use Flask
 
@@ -213,6 +215,8 @@ if __name__ == "__main__":
 > **NOTE**: This file should be placed in a directory called **templates** for flask to render it.
 
 Since i am not a professional front end designer, my webpage is simple but you can use a framework such as [**bootsrap**](http://getbootstrap.com/) for aesthetic purposes.
+
+> You can find this code in this repo under **/code/templates/main.html**
 
 ```html
 <!doctype html>
