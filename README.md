@@ -131,7 +131,7 @@ Insert into commandsFrequency(Command,NumberOfRuns) values (%s,'0')",command
 This will insert a new row into the table with columns being **Command** (the command to add) and its **NumberOfRuns** (NOR).
 
 
-below is the python code to connect and use this Database:
+below is the python code to connect to and use this Database:
 
 ```python
 import MySQLdb
@@ -211,6 +211,7 @@ if __name__ == "__main__":
 
 ##Website
 > **NOTE**: This file should be placed in a directory called **templates** for flask to render it.
+
 Since i am not a professional front end designer, my webpage is simple but you can use a framework such as [**bootsrap**](http://getbootstrap.com/) for aesthetic purposes.
 
 ```html
