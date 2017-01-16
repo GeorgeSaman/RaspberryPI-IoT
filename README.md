@@ -1,6 +1,9 @@
 # RaspberryPI-IoT
 An IoT project utilizing RS232(UART),FLASK,MYSQL and rendering a website on a RPI.
 
+
+>Feel Free to email me: **Georgesaman@csu.fullerton.edu**
+
 ##Index
 
 * How to use.
